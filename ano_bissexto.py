@@ -40,4 +40,11 @@ Escreva uma função que determina se um determinado ano informado é bissexto o
 def ano_bissexto (ano: int):
 	ano = int(ano)
 	return (ano % 4 == 0 ) and (ano % 100 != 0) or (ano % 400 == 0)
-print()
+
+for ano in range(1600, 2100):
+	if ano_bissexto(ano):
+		print(f'ano é Bissexto')
+	else:
+		print(f'ano não é Bissexto')
+# Melhorar o codigo para inserir os teste acima dos anos.
+# Tentar fazer a inserção do ano e calcular se é ou não bissexto.
