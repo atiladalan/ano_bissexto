@@ -3,7 +3,12 @@ Ano Bissexto
 
 Este problema foi utilizado em 469 Dojo(s).
 
-A cada 4 anos, a diferença de horas entre o ano solar e o do calendário convencional completa cerca de 24 horas (mais exatamente: 23 horas, 15 minutos e 864 milésimos de segundo). Para compensar essa diferença e evitar um descompasso em relação às estações do ano, insere-se um dia extra no calendário e o mês de fevereiro fica com 29 dias. Essa correção é especialmente importante para atividades atreladas às estações, como a agricultura e até mesmo as festas religiosas.
+A cada 4 anos, a diferença de horas entre o ano solar e o do calendário convencional completa cerca de 24 horas
+(mais exatamente: 23 horas, 15 minutos e 864 milésimos de segundo).
+Para compensar essa diferença e evitar um descompasso em relação às estações do ano,
+insere-se um dia extra no calendário e o mês de fevereiro fica com 29 dias.
+Essa correção é especialmente importante para atividades atreladas às estações,
+como a agricultura e até mesmo as festas religiosas.
 
 Um determinado ano é bissexto se:
 
@@ -38,13 +43,13 @@ Escreva uma função que determina se um determinado ano informado é bissexto o
 """
 
 def ano_bissexto (ano: int):
-	ano = int(ano)
-	return (ano % 4 == 0 ) and (ano % 100 != 0) or (ano % 400 == 0)
+    ano = int(ano)
+    return (ano % 4 == 0 ) and (ano % 100 != 0) or (ano % 400 == 0)
 
 for ano in range(1600, 2100):
-	if ano_bissexto(ano):
-		print(f'ano é Bissexto')
-	else:
-		print(f'ano não é Bissexto')
+    if ano_bissexto(ano):
+        print(f'ano é Bissexto')
+    else:
+        print(f'ano não é Bissexto')
 # Melhorar o codigo para inserir os teste acima dos anos.
 # Tentar fazer a inserção do ano e calcular se é ou não bissexto.
