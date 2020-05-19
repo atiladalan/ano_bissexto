@@ -42,7 +42,7 @@ False
 Escreva uma função que determina se um determinado ano informado é bissexto ou não.
 """
 
-def ano_bissexto (ano: int):
+def ano_bissexto(ano: int):
     ano = int(ano)
     return (ano % 4 == 0 ) and (ano % 100 != 0) or (ano % 400 == 0)
 
