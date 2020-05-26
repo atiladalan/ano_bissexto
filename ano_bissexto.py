@@ -15,41 +15,47 @@ Um determinado ano é bissexto se:
 O ano for divisível por 4, mas não divisível por 100, exceto se ele for também divisível por 400.
 Exemplos:
 
-São bissextos por exemplo:
-
->>> ano_eh_bissexto(1600)
-True
->>> ano_eh_bissexto(1732)
-True
->>> ano_eh_bissexto(1888)
-True
->>> ano_eh_bissexto(1944)
-True
->>> ano_eh_bissexto(2008)
-True
-
-Não são bissextos por exemplo:
-
->>> ano_eh_bissexto(1742)
-False
->>> ano_eh_bissexto(1889)
-False
->>> ano_eh_bissexto(1951)
-False
->>> ano_eh_bissexto(2011)
-False
+# São bissextos por exemplo:
+#
+# >>> ano_eh_bissexto(1600)
+# True
+# >>> ano_eh_bissexto(1732)
+# True
+# >>> ano_eh_bissexto(1888)
+# True
+# >>> ano_eh_bissexto(1944)
+# True
+# >>> ano_eh_bissexto(2008)
+# True
+#
+# Não são bissextos por exemplo:
+#
+# >>> ano_eh_bissexto(1742)
+# False
+# >>> ano_eh_bissexto(1889)
+# False
+# >>> ano_eh_bissexto(1951)
+# False
+# >>> ano_eh_bissexto(2011)
+# False
 
 Escreva uma função que determina se um determinado ano informado é bissexto ou não.
 """
+ano = int(input('Digite o Ano Desejado:'))
 
-def ano_bissexto(ano: int):
-    ano = int(ano)
-    return (ano % 4 == 0 ) and (ano % 100 != 0) or (ano % 400 == 0)
+if (ano % 4 == 0) and (ano % 100 != 0) or (ano % 400 == 0):
+    print('Ano é Bissexto')
+else:
+    print('Ano não é Bissexto')
 
-for ano in range(1600, 2100):
-    if ano_bissexto(ano):
-        print(f'ano é Bissexto')
-    else:
-        print(f'ano não é Bissexto')
+# def ano_bissexto(ano: int):
+#     ano = int(ano)
+# return (ano % 4 == 0) and (ano % 100 != 0) or (ano % 400 == 0)
+
+# for ano in range(1600, 2020):
+#     if ano_bissexto(ano):
+#         print(f'ano é Bissexto')
+#     else:
+#         print(f'ano não é Bissexto')
 # Melhorar o codigo para inserir os teste acima dos anos.
 # Tentar fazer a inserção do ano e calcular se é ou não bissexto.
