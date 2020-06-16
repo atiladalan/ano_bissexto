@@ -5,6 +5,9 @@ sudo: true
 python:
   - 3.7.2
 
+script:
+  - flake8
+  - pytest libpythonpro --cov=libpythonpro
 env:
   global:
     - PIPENV_VENV_IN_PROJECT=1
