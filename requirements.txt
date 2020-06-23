@@ -1,6 +1,6 @@
 certifi==2020.4.5.2
 chardet==3.0.4
-flake8==3.8.1
+flake8==3.8.3
 idna==2.5
 mccabe==0.6.1
 pycodestyle==2.6.0
